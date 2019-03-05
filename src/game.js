@@ -5,3 +5,8 @@ function arrayCreation(x, y) {
   }
   return arr;
 }
+
+function cellCount(arr) {
+  var cells = arr.map(element => { return element.length }).reduce((a,b) => a + b, 0)
+  return cells;
+}
