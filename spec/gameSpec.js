@@ -8,4 +8,8 @@ describe("Game", () => {
     expect(arr.length).toEqual(10)
   })
 
+  it("is an array with an expected number of values in a 2d format", () => {
+    expect(arr.cells.length).toEqual(100)
+  })
+
 })
