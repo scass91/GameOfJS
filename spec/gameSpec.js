@@ -12,7 +12,8 @@ describe("Game", () => {
     expect(cellCount(arr)).toEqual(100)
   })
 
-  it("contains the number 1 or 0 in all cells", () => {
-    expect(arr).toEqual(jasmine.arrayContaining([0] || [1]))
+//Logic here is that the max value can be a 1 in every cell
+  it("contains only the integers 0 or 1 in cells", () => {
+    expect(arrSum(arr)).not.toBeGreaterThan(cellCount(arr));
   })
 })
