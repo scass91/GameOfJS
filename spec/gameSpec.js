@@ -12,4 +12,7 @@ describe("Game", () => {
     expect(cellCount(arr)).toEqual(100)
   })
 
+  it("contains the number 1 or 0 in all cells", () => {
+    expect(arr).toEqual(jasmine.arrayContaining([0] || [1]))
+  })
 })
