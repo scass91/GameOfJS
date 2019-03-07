@@ -1,7 +1,11 @@
-describe("Cell State", () => {
+describe("cellState", () => {
 
-  it("Has a state of 1 if ALIVE", () => {
-    expect(cellState.ALIVE).toEqual(1)
+  beforeEach(() => {
+    cell = new cellState()
+  })
+
+  it("Returns a 1 if alive", () => {
+    expect(cell.alive).toEqual(1)
   })
 
 })
